@@ -1,6 +1,9 @@
 import os
-import queue
 import argparse
+try:
+     import queue
+except ImportError:
+     import Queue as queue
 
 import pygame
 from pygame.locals import *
@@ -9,7 +12,7 @@ import soundfile as sf
 
 
 FILENAME = 'tmp.wav'
-RATE = 48000*2
+RATE = 96000
 CHANNELS = 1
 
 stopped = False
