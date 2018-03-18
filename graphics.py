@@ -14,6 +14,7 @@ def init_display():
      global img, txt
 
      display = pygame.display.set_mode((WIDTH, HEIGHT))
+     pygame.display.set_caption('Record My Voice')
      pygame.font.init()
      font = pygame.font.Font('font.ttf', 25)
      txt['wait'] = font.render('Press Space to start record', True, (255, 255, 255))
