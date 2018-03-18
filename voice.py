@@ -1,22 +1,20 @@
 import os
-
-import argparse
 import queue
+import argparse
 
 import pygame
 from pygame.locals import *
-
 import sounddevice as sd
 import soundfile as sf
 
-
-parser = argparse.ArgumentParser(description=__doc__)
 
 FILENAME = 'tmp.wav'
 RATE = 48000*2
 CHANNELS = 1
 
 stopped = False
+parser = argparse.ArgumentParser(description=__doc__)
+
 
 def stop_rec():
      global stopped

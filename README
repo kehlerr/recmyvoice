@@ -1,0 +1,14 @@
+Download:
+     git clone https://github.com/kehlerr/recmyvoice.git
+
+Install:
+     sudo pip install pygame sounddevice soundfile
+
+Usage:
+     python main.py
+
+Dependencies:
+     python2.7+
+     pygame
+     sounddevice
+     soundfile
