@@ -5,11 +5,13 @@ import sys
 from voice import *
 from graphics import *
 
+FPS=24
 
 def main():
      display = init_display()
 
      while True:
+          pygame.time.Clock().tick(FPS)
           for event in pygame.event.get():
                if event.type == KEYDOWN:
                     is_pressed = pygame.key.get_pressed()
